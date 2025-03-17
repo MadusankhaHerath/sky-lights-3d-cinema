@@ -1,11 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div className="h-full flex items-center justify-center bg-blue-500 text-white text-3xl text-center">
-      Tailwind is Working! 🚀
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/login' element={<Login/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
