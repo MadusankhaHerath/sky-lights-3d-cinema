@@ -8,6 +8,9 @@ import UserManagement from './pages/AdminPage/UserManagement';
 import Booking from './pages/AdminPage/Booking';
 import Dashboard from './pages/AdminPage/Dashboard';
 import CrewManagement from './pages/AdminPage/CrewManagement';
+import ShiftScheduling from './pages/AdminPage/ShiftScheduling';
+import AddNew from './pages/AdminPage/AddNew';
+
 
 
 
@@ -23,6 +26,8 @@ function App() {
       <Route path='/Admin/Dashboard' element={<Dashboard/>}/>
       <Route path='/Admin/Booking' element={<Booking/>}/>
       <Route path='/Admin/User/CrewManagement' element={<CrewManagement/>}/>
+      <Route path='/Admin/User/ShiftScheduling' element={<ShiftScheduling/>}/>
+      <Route path='/Admin/User/CrewManagement/AddNew' element={<AddNew/>}/>
     </Routes>
     </BrowserRouter>
   );
